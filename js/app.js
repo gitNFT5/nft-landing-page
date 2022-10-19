@@ -85,9 +85,9 @@ function updateStatusText(isOwner, checking) {
     }
   } else {
     if(isOwner) {
-      statusText.innerText = `You own ${editions.length} ${COLLECTION_NAME}!!
+      statusText.innerText = `You own ${editions.length} ${COLLECTION_NAME}!! `;
     } else {
-      statusText.interText =  `You own ${editions.length} ${COLLECTION_NAME}!! ;
+      statusText.innerText = `You don't own any ${COLLECTION_NAME} `;
     }
   }
   dots = dots === 3 ? 1 : dots + 1;
